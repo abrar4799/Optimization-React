@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from "./components/UI/Button/Button"
 
 import './App.css';
+import DemoOutput from './components/Demo/DemoOutput';
 
 function App() {
   const [showPara , setShowPare] = useState(false)
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="app">
       <h1>Hi there!</h1>
-     { showPara && <p>This is new!</p>}
+      <DemoOutput show={showPara}/>
      <Button onClick={ToggleParaHandler}>Toggle Para!</Button>
     
     </div>
