@@ -6,10 +6,12 @@ import DemoOutput from './components/Demo/DemoOutput';
 
 function App() {
   const [showPara , setShowPare] = useState(false)
-
+/** Function is an object is Javascript */
   const ToggleParaHandler = () =>{
     setShowPare( (prevShowPara) => !showPara )
   }
+  
+   
   return (
     <div className="app">
       <h1>Hi there!</h1>
